@@ -1,38 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+
+.App-header {
+  margin: 50px;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  /* color: rgb(227, 119, 194); */
+}
+
+.App-header p {
+  margin: 0px;
+}
+
+.d3-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart-container {
+  margin-bottom: 75px;
+  width: 50%;
+  height: 250px;
+}
+
+.pie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-button-container {
+  margin-top: -115px;
+}
+.update-button {
+  background-color: rgb(255, 127, 14);
+  color: white;
+  font-size: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.update-button:hover {
+  background-color: rgb(214, 39, 40);
+}
+
+.axis {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.value-line {
+  stroke-width: 3px;
+  fill: none;
 }
